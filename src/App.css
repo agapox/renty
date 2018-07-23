@@ -1,0 +1,154 @@
+.App {
+  font-family: 'Heebo', sans-serif;
+}
+.App h1,
+.App h2,
+.App h3,
+.App h4,
+.App h5 h6 {
+  font-weight: bold;
+}
+.App .text-with-icon {
+  margin-left: 10px;
+}
+.App button {
+  border-radius: 20px;
+  padding: 0.2em 2em;
+}
+.App button.btn-primary-renty {
+  background-color: #6B6B6B !important;
+  color: #ffffff !important;
+}
+.App button.btn-secondary-renty {
+  background-color: #B6B6B6 !important;
+  color: #2C2C2C !important;
+  border: 2px solid #6B6B6B;
+}
+.App button.btn-outline-renty {
+  background-color: transparent !important;
+  color: #969696 !important;
+}
+.App button.btn-cancel-renty {
+  background-color: #B6B6B6 !important;
+  color: #ffffff !important;
+}
+.App .container-full {
+  margin: 0 1em 0 2em;
+}
+@media (max-width: 600px) {
+  .App .container-full {
+    margin: 0;
+  }
+}
+.App .container-full .container-full__last {
+  margin: 2em auto;
+}
+.App header {
+  background-color: #5E5E5E;
+  padding: 1em 0;
+  color: #ffffff;
+}
+.App header .logo-image {
+  width: 126px;
+  height: 46.2px;
+}
+@media (max-width: 600px) {
+  .App header .logo-image {
+    width: 108px;
+    height: 39.6px;
+  }
+}
+.App header .profile-container .profile__user-avatar img {
+  width: 40px;
+  border-radius: 50%;
+}
+.App header .profile-container .profile__user-name {
+  margin: 0 5px;
+}
+@media (max-width: 600px) {
+  .App header .profile-container .profile__user-name {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .App header .profile-container .profile__user-menu {
+    display: none;
+  }
+}
+.App .business-container {
+  padding: 2em 0;
+  color: #5E5E5E;
+}
+.App .business-container .business-modules {
+  padding: 1em 0;
+}
+.App .business-container .business-modules .business-modules__item {
+  border-radius: 10px;
+  border: 2px solid;
+  height: 200px;
+  width: 200px;
+  background-color: #F3F3F3;
+  border-color: #969696;
+}
+@media (max-width: 600px) {
+  .App .business-container .business-modules .business-modules__item {
+    margin: 20px auto;
+  }
+}
+.App .business-container .business-modules .business-modules__item.business-modules__add-module {
+  background-color: #FCFCFC;
+  border-color: #E3E3E3;
+}
+.App .business-container .business-modules .business-modules__item > div {
+  height: 100%;
+}
+.App .business-container .business-modules .business-modules__item-empty {
+  border-radius: 0;
+  height: 200px;
+}
+.App .contract-module {
+  padding: 2em 0;
+  color: #5E5E5E;
+}
+.App .contract-module .contract-module__-title i {
+  color: #2C2C2C;
+}
+.App .contract-module .contract-module__-title span {
+  color: #2C2C2C;
+  margin-left: 10px;
+}
+.App .contract-module form .input-renty {
+  border-radius: 0;
+  -webkit-box-shadow: inset 1px 8px 16px -13px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 1px 8px 16px -13px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 1px 8px 16px -13px rgba(0, 0, 0, 0.6);
+}
+.App .buy-module {
+  color: #6B6B6B;
+}
+.App .buy-module i {
+  color: #0B0B0B;
+}
+.App .buy-module ul {
+  list-style: none;
+  padding-left: 0;
+}
+.App .buy-module button {
+  margin: 0 10px;
+}
+.App .modal-item button.close {
+  border: 1px solid;
+  padding: 0px 5px;
+  background-color: #D7D7D7;
+}
+.App .modal-item:focus {
+  outline: none;
+}
+.App .modal-item hr {
+  margin-left: -3em;
+  margin-right: -2em;
+  margin-top: 0;
+}
+.App .purchase-success button {
+  margin: 0 1em;
+}

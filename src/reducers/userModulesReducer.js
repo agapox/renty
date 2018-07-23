@@ -1,0 +1,6 @@
+function userModulesReducer (state = [], action) {
+  console.log(state, action)
+  return state
+}
+
+export default userModulesReducer

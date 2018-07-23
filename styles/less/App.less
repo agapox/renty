@@ -1,0 +1,173 @@
+@mainColor: #5E5E5E;
+@headerBgColor: @mainColor;
+@darkTextColor: #2C2C2C;
+
+// Active
+@activeBorder: #969696;
+@activeBg: #F3F3F3;
+@activeIcon: #717171;
+
+// Inactive
+@inactiveBorder: #E3E3E3;
+@inactiveBg: #FCFCFC;
+@inactiveIcon: #5E5E5E;
+
+.App {
+  font-family: 'Heebo', sans-serif;
+  h1, h2, h3, h4, h5 h6 {
+    font-weight: bold;
+  }
+  .text-with-icon {
+    margin-left: 10px;
+  }
+  //Buttons Styles
+  button {
+    // Buttons Styles
+    @primaryBtnBgColor: #6B6B6B;
+    @primaryBtnColor: #ffffff;
+    @secondaryBtnBgColor: #B6B6B6;
+    @secondaryBtnColor: @darkTextColor;
+    @secondaryBtnBorderColor: @primaryBtnBgColor;
+    @outlineBtnBgColor: transparent;
+    @outlineBtnColor: #969696;
+    border-radius: 20px;
+    padding: 0.2em 2em;
+    //width: 10em;
+    //height: 2.5em;
+    &.btn-primary-renty {
+      background-color: @primaryBtnBgColor !important;
+      color: @primaryBtnColor !important;
+    }
+    &.btn-secondary-renty {
+      background-color: @secondaryBtnBgColor !important;
+      color: @secondaryBtnColor !important;
+      border: 2px solid @secondaryBtnBorderColor;
+    }
+    &.btn-outline-renty {
+      background-color: @outlineBtnBgColor !important;
+      color: @outlineBtnColor !important;
+    }
+    &.btn-cancel-renty {
+      background-color: @secondaryBtnBgColor !important;
+      color: @primaryBtnColor !important;
+    }
+  }
+  // Container Full Styles
+  .container-full {
+    margin: 0 1em 0 2em;
+    @media (max-width: 600px) {margin: 0;}
+
+    .container-full__last {
+      margin: 2em auto;
+    }
+  }
+  header {
+    background-color: @headerBgColor;
+    padding: 1em 0;
+    color: #ffffff;
+
+    .logo-image {
+      @logoWidth: 180px;
+      @logoHeight: 66px;
+      width: @logoWidth*0.7;
+      height: @logoHeight*0.7;
+      @media (max-width: 600px) {width: @logoWidth*0.6;height: @logoHeight*0.6;}
+    }
+
+    .profile-container {
+      .profile__user-avatar {
+        img {
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+      .profile__user-name {
+        margin: 0 5px;
+        @media (max-width: 600px) {display: none;}
+      }
+      .profile__user-menu {
+        @media (max-width: 600px) {display: none;}
+      }
+    }
+  }
+  .business-container {
+    padding: 2em 0;
+    color: @mainColor;
+
+    .business-modules {
+      padding: 1em 0;
+
+      .business-modules__item {
+        border-radius: 10px;
+        border: 2px solid;
+        height: 200px;
+        width: 200px;
+        background-color: @activeBg;
+        border-color: @activeBorder;
+        @media (max-width: 600px) {margin: 20px auto;}
+        &.business-modules__add-module {
+          background-color: @inactiveBg;
+          border-color: @inactiveBorder;
+        }
+        &>div {
+          height: 100%;
+        }
+      }
+      .business-modules__item-empty {
+        border-radius: 0;
+        height: 200px;
+      }
+    }
+  }
+  .contract-module {
+    padding: 2em 0;
+    color: @mainColor;
+    .contract-module__-title {
+      i {color: @darkTextColor;}
+      span {color: @darkTextColor; margin-left: 10px;}
+    }
+    form {
+      .input-renty {
+        border-radius: 0;
+        -webkit-box-shadow: inset 1px 8px 16px -13px rgba(0,0,0,0.6);
+        -moz-box-shadow: inset 1px 8px 16px -13px rgba(0,0,0,0.6);
+        box-shadow: inset 1px 8px 16px -13px rgba(0,0,0,0.6);
+      }
+    }
+  }
+
+  // BuyModule Styles
+  .buy-module {
+    color: #6B6B6B;
+    i {
+      color: #0B0B0B;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    button {
+      margin: 0 10px;
+    }
+  }
+  .modal-item {
+    button.close {
+      border: 1px solid;
+      padding: 0px 5px;
+      background-color: #D7D7D7;
+    }
+    &:focus {
+      outline: none;
+    }
+    hr {
+      margin-left: -3em;
+      margin-right: -2em;
+      margin-top: 0;
+    }
+  }
+  .purchase-success {
+    button {
+      margin: 0 1em;
+    }
+  }
+}
